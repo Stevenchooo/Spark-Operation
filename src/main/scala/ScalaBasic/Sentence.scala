@@ -53,12 +53,14 @@ object Sentence {
 
   def layout[A](x: A) = "[" + x.toString() + "]"
 
+  //匿名函数
   var function0 = (x: Int, y: Int) => x * y
   var function1 = () => ("steve")
 
+  //柯里化函数
   def strcat(s1: String)(s2: String) = s1 + s2
-
   def strcat1(s1: String) = (s2: String) => s1 + s2
 
+  //Scala允许您定义函数内部的函数，而在其他函数中定义的函数称为局部函数。
 
 }
