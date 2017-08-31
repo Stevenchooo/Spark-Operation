@@ -1,5 +1,5 @@
 package ScalaBasic
-
+import java.util.Date
 /**
   * Created by cWX491729 on 2017/8/30.
   */
@@ -14,13 +14,19 @@ object Sentence {
     fu()
     for (i <- 1 until 10) {
       println("Factorial of " + i + ": = " + faberity(i))
-
     }
     fa("Hello", "Scala", "Python");
     print("\n" + apply(layout, 10))
 
     print("\n" + function0(12, 12)
       + "\n" + function1)
+
+    val date1 = new Date
+    val logg = function2(date1 , _:String)
+    logg("message1")
+    Thread.sleep(2000)
+    val date2 = new Date
+    logg("message2")
   }
 
   def functionName(a: Int, b: Int): Int = {
@@ -62,5 +68,10 @@ object Sentence {
   def strcat1(s1: String) = (s2: String) => s1 + s2
 
   //Scala允许您定义函数内部的函数，而在其他函数中定义的函数称为局部函数。
+
+  def function2 (date : Date , message: String )= {
+    println(date + "----" + message)
+  }
+
 
 }
