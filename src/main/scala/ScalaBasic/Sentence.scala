@@ -27,6 +27,11 @@ object Sentence {
     Thread.sleep(2000)
     val date2 = new Date
     logg("message2")
+
+    var f = "a".concat("& b") + "& c"
+    var fs = printf("The value is " + "%s," , f)//%f , %d , %s
+
+    println(s"Hello, $f")
   }
 
   def functionName(a: Int, b: Int): Int = {
@@ -72,6 +77,11 @@ object Sentence {
   def function2 (date : Date , message: String )= {
     println(date + "----" + message)
   }
+
+  //闭包是一个函数
+  var factor = 3
+  val multiplier = (i:Int) => i * factor
+
 
 
 }

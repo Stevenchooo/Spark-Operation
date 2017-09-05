@@ -4,7 +4,7 @@ import org.apache.spark.rdd._
 import org.apache.spark.{SparkContext, SparkConf}
 
 /**
-  * Created by cWX491729 on 2017/8/14.
+  * Created by Steven on 2017/8/14.
   */
 object RDDAction {
   def main(args: Array[String]): Unit = {
