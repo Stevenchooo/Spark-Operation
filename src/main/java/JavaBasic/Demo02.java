@@ -1,5 +1,6 @@
 package JavaBasic;
 
+import scala.collection.mutable.ArrayBuffer;
 import scala.collection.mutable.Buffer;
 
 /**
@@ -7,12 +8,6 @@ import scala.collection.mutable.Buffer;
  */
 public class Demo02 {
     public Buffer retain() {
-        synchronized (recycleLock) {
-            //预防性检测，先确认内存段是否已被回收
-            ensureNotRecycled();
-            referenceCount++;
-            return this;
-            redistributeBuffers
-        }
+        return new ArrayBuffer();
     }
 }

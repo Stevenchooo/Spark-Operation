@@ -13,6 +13,7 @@ class Function {
 
     Lock lock = new ReentrantLock();
     Condition con = lock.newCondition();
+
     //子线程要实现的功能
     public void sub() {
         lock.lock();
